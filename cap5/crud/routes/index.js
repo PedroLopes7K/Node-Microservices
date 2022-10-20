@@ -22,7 +22,6 @@ router.get('/delete/:id', async function (req, res, next) {
 
 /* POST edit page. */
 router.post('/edit/:id', async function (req, res) {
-  console.log('estou chegando aqui')
   const id = req.params.id
   const nome = req.body.nome
   const idade = parseInt(req.body.idade)
@@ -33,7 +32,6 @@ router.post('/edit/:id', async function (req, res) {
 
 /* POST new page. */
 router.post('/new', async function (req, res) {
-  console.log('conseguindo criar normal')
   const nome = req.body.nome
   const idade = parseInt(req.body.idade)
   const uf = req.body.uf
