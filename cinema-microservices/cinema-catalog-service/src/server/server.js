@@ -6,7 +6,7 @@ let server = null
 async function start(api, repository) {
   const app = express()
   app.use(morgan('dev'))
-  app.use(express.json())
+
   api(app, repository)
 
   app.use((err, req, res, next) => {
